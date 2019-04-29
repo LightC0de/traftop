@@ -8722,61 +8722,6 @@ textarea.form-control {
   .media .ftco-icon span {
     color: #6e5773; }
 
-#map {
-  width: 100%; }
-  @media (max-width: 767.98px) {
-    #map {
-      height: 300px; } }
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(110, 87, 115, 0.4); }
-  70% {
-    -webkit-box-shadow: 0 0 0 30px rgba(110, 87, 115, 0); }
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(110, 87, 115, 0); } }
-
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(110, 87, 115, 0.4);
-    -webkit-box-shadow: 0 0 0 0 rgba(110, 87, 115, 0.4);
-    box-shadow: 0 0 0 0 rgba(110, 87, 115, 0.4); }
-  70% {
-    -moz-box-shadow: 0 0 0 30px rgba(110, 87, 115, 0);
-    -webkit-box-shadow: 0 0 0 30px rgba(110, 87, 115, 0);
-    box-shadow: 0 0 0 30px rgba(110, 87, 115, 0); }
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(110, 87, 115, 0);
-    -webkit-box-shadow: 0 0 0 0 rgba(110, 87, 115, 0);
-    box-shadow: 0 0 0 0 rgba(110, 87, 115, 0); } }
-
-.heading-section .subheading {
-  font-size: 16px;
-  display: block;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  color: #6e5773;
-  letter-spacing: 2px; }
-
-.heading-section h2 {
-  font-size: 40px;
-  font-weight: 600;
-  text-transform: uppercase; }
-  .heading-section h2 span {
-    font-weight: 400; }
-  @media (max-width: 767.98px) {
-    .heading-section h2 {
-      font-size: 28px; } }
-
-.heading-section.heading-section-white .subheading {
-  color: rgba(255, 255, 255, 0.9) !important; }
-
-.heading-section.heading-section-white h2 {
-  color: #fff; }
-
-.heading-section.heading-section-white p {
-  color: rgba(255, 255, 255, 0.9); }
-
 .img,
 .blog-img,
 .user-img {
