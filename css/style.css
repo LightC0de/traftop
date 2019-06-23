@@ -8017,8 +8017,16 @@ a {
     color: #dc3545;
     outline: none !important; }
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 400; }
@@ -8131,15 +8139,11 @@ table {
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
     border: 1px solid #a0f669;
     background: #a0f669 !important; }
-  .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active {
-    background: transparent;
-    background: none;
-    color: #dc3545; }
-    .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active span:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); }
+  .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1); }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
       color: #dc3545; } }
@@ -8639,7 +8643,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
@@ -8970,7 +8974,8 @@ textarea.form-control {
     font-weight: 400;
     line-height: 1;
     color: #fff; }
-  .blog-entry span.yr, .blog-entry span.mos {
+  .blog-entry span.yr,
+  .blog-entry span.mos {
     display: block;
     font-size: 16px;
     line-height: 1.4;
@@ -8979,13 +8984,15 @@ textarea.form-control {
 
 .block-23 ul {
   padding: 0; }
-  .block-23 ul li, .block-23 ul li > a {
+  .block-23 ul li,
+  .block-23 ul li > a {
     display: table;
     line-height: 1.5;
     margin-bottom: 15px; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.7); }
-  .block-23 ul li .icon, .block-23 ul li .text {
+  .block-23 ul li .icon,
+  .block-23 ul li .text {
     display: table-cell;
     vertical-align: top; }
   .block-23 ul li .icon {
@@ -9006,7 +9013,8 @@ textarea.form-control {
     display: inline-block;
     margin-bottom: 4px;
     font-weight: 400; }
-    .block-27 ul li a, .block-27 ul li span {
+    .block-27 ul li a,
+    .block-27 ul li span {
       color: #a0f669;
       text-align: center;
       display: inline-block;
@@ -9015,7 +9023,8 @@ textarea.form-control {
       line-height: 40px;
       border-radius: 50%;
       border: 1px solid #cccccc; }
-    .block-27 ul li.active a, .block-27 ul li.active span {
+    .block-27 ul li.active a,
+    .block-27 ul li.active span {
       background: #a0f669;
       color: #fff;
       border: 1px solid transparent; }
@@ -9194,28 +9203,34 @@ textarea.form-control {
     font-weight: 500;
     margin-bottom: 20px; }
 
-.categories, .sidelink {
+.categories,
+.sidelink {
   padding: 0;
   margin: 0; }
-  .categories li, .sidelink li {
+  .categories li,
+  .sidelink li {
     position: relative;
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #dee2e6;
     list-style: none; }
-    .categories li:last-child, .sidelink li:last-child {
+    .categories li:last-child,
+    .sidelink li:last-child {
       margin-bottom: 0;
       border-bottom: none;
       padding-bottom: 0; }
-    .categories li a, .sidelink li a {
+    .categories li a,
+    .sidelink li a {
       display: block;
       color: #1a1a1a; }
-      .categories li a span, .sidelink li a span {
+      .categories li a span,
+      .sidelink li a span {
         position: absolute;
         right: 0;
         top: 0;
         color: #ccc; }
-    .categories li.active a, .sidelink li.active a {
+    .categories li.active a,
+    .sidelink li.active a {
       color: #000000;
       font-style: italic; }
 
@@ -9277,6 +9292,12 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+
+#advantages img {
+  width: 60%; }
+
+#advantages p {
+  color: #343a40; }
 
 @-webkit-keyframes loader-rotate {
   100% {
