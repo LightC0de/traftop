@@ -14,7 +14,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $url = $_POST["url"];
 
-$to = "n0975771178@gmail.com";
+$to = "bestallorder@gmail.com";
 $subject = "Быстрая форма";
 $txt = "Имя: " . $name . "\nEmail: " . $email . "\nUrl: " . $url;
 

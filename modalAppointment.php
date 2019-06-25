@@ -21,7 +21,7 @@ if($typePrice == '') {
     $typePrice = "Простой";
 }
 
-$to = "n0975771178@gmail.com";
+$to = "bestallorder@gmail.com";
 $subject = "Полная форма с тарифом";
 $txt = "Email: " . $email
  . "\nUrl: " . $url
