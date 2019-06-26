@@ -51,7 +51,7 @@ $txt = "Email: " . $email
  . "\nСлова: " . $words
  . "\nТип тарифа: " . $typePrice;
 
-// mail($to,$subject,$txt,$headers);
+mail($to,$subject,$txt,$headers);
 
 $merchant_id = '149411';
 $secret_word = 'd544hyar';
