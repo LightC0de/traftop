@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Отправка письма</title>
-</head>
-<body>
-
 <?php
 
 $email = $_POST["email"];
@@ -21,6 +11,37 @@ if($typePrice == '') {
     $typePrice = "Простой";
 }
 
+switch ($price) {
+    case 100000:
+        if (typePrice = "Простой") {
+            $total = 7000;
+        } else {
+            $total = 10000;
+        }
+    break;
+    case 60000:
+        if (typePrice = "Простой") {
+            $total = 4500;
+        } else {
+            $total = 7000;
+        }
+    break;
+    case 30000:
+        if (typePrice = "Простой") {
+            $total = 3000;
+        } else {
+            $total = 5000;
+        }
+    break;
+    case 10000:
+        if (typePrice = "Простой") {
+            $total = 1200;
+        } else {
+            $total = 2500;
+        }
+    break;
+}
+
 $to = "bestallorder@gmail.com";
 $subject = "Полная форма с тарифом";
 $txt = "Email: " . $email
@@ -30,16 +51,11 @@ $txt = "Email: " . $email
  . "\nСлова: " . $words
  . "\nТип тарифа: " . $typePrice;
 
-if( mail($to,$subject,$txt,$headers) ) {
-?>
-    <h1 style="color: green">Письмо было успешно отправлено!</h1>
-    <h2>Через секунду Вас перенаправит на главную - <a href="http://traftop.biz/">ссылка</a></h2>
+// mail($to,$subject,$txt,$headers);
 
-    <?php } else { ?>
-
-    <h1  style="color: red">Что-то пошло не так..</h1>
-    <h2>Через секунду Вас перенаправит на главную - <a href="http://traftop.biz/">ссылка</a></h2>
-    <?php } ?>
-<script>setTimeout( 'location="http://traftop.biz/";', 2000 );</script>
-</body>
-</html>
+$merchant_id = '149411';
+$secret_word = 'd544hyar';
+$total2 = strip_tags($total);	
+$email2 = strip_tags($email);	
+$sign = md5($merchant_id.':'.$total2.':'.$secret_word.':'.$email2);
+header('Refresh: 0; URL=http://www.free-kassa.ru/merchant/cash.php?m='.$merchant_id.'&oa='.$total2.'&s='.$sign.'&o='.$email2);
