@@ -13,28 +13,28 @@ if($typePrice == '') {
 
 switch ($price) {
     case 100000:
-        if ($typePrice = "Простой") {
+        if ($typePrice == "Простой") {
             $total = 7000;
         } else {
             $total = 10000;
         }
     break;
     case 60000:
-        if ($typePrice = "Простой") {
+        if ($typePrice == "Простой") {
             $total = 4500;
         } else {
             $total = 7000;
         }
     break;
     case 30000:
-        if ($typePrice = "Простой") {
+        if ($typePrice == "Простой") {
             $total = 3000;
         } else {
             $total = 5000;
         }
     break;
     case 10000:
-        if ($typePrice = "Простой") {
+        if ($typePrice == "Простой") {
             $total = 1200;
         } else {
             $total = 2500;
